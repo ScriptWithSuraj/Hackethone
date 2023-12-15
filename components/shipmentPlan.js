@@ -21,7 +21,7 @@ const Shipment = () => {
 
   useEffect(() => {
     const getShipmentData = async () => {
-      const apiUrl = "http://localhost:5000/get/quote/10000";
+      const apiUrl = "http://localhost:5000/get/quote/10002";
 
       try {
         const response = await fetch(apiUrl, {

@@ -16,8 +16,8 @@ const Home = () => {
         />
       </Head>
       <main className={styles.main}>
-        <MapComponent />
         <Shipment />
+        <MapComponent />
       </main>
       <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
       <script src="https://unpkg.com/@turf/turf"></script>

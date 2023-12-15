@@ -76,6 +76,7 @@ const Nav = ({ shipmentData }) => {
           disabled
           value={shipmentData?.pickupLocationName}
         ></input>
+        {"=>"}
         <input
           className="border border-black text-center"
           disabled
