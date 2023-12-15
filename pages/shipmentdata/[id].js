@@ -1,8 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import MapComponent from "../components/map";
-import Shipment from "../components/shipmentPlan";
-import Nav from "../components/nav";
+import styles from "../../styles/Home.module.css";
+import MapComponent from "../../components/map";
+import Shipment from "../../components/shipmentPlan";
+// import Nav from "../components/nav";
 const Home = () => {
   return (
     <div className={styles.container}>

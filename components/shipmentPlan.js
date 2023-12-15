@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Nav from "./nav";
 
 const Shipment = () => {
   const filters = ["Fastest", "Cheapest", "Greenest"];
@@ -55,6 +56,10 @@ const Shipment = () => {
 
   return (
     <>
+      <Nav shipmentData={shipmentData[0]} />
+      <div className="w-full p-4 flex">
+        <h3 className="font-bold text-lg ml-2">Shipping Routes</h3>
+      </div>
       <div className="flex mt-8 ml-5 items-center">
         {filters.map((filter, index) => (
           <div
@@ -228,7 +233,7 @@ const Shipment = () => {
                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                     />
                   </svg>
-                  Amazon Fulfillment Warehouse,Texas
+                  {card.destination}
                 </div>
                 <button className="bg-white flex items-start ml-7 border-2 border-purple-900 w-fit p-3">
                   Show detailed plan
